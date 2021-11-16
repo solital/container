@@ -1,0 +1,25 @@
+{
+	"name": "solital/container",
+	"type": "library",
+	"description": "Dependency injection implementation via use of a container for Solital Framework",
+	"homepage": "http://solitalframework/",
+	"keywords": ["di", "dependency injection", "container", "ioc", "psr-11", "psr11", "solital"],
+	"license": "MIT",
+	"require": {
+		"php": "^8.0",
+		"psr/container": "2.*"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^9"
+	},
+	"autoload": {
+		"psr-4": {
+			"Solital\\Core\\Container\\": ""
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Solital\\Core\\Container\\Test\\": "tests/"
+		}
+	}
+}
