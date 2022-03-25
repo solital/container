@@ -1,6 +1,6 @@
 <?php
 
-namespace Solital\Core\Container\Test;
+namespace Solital\Core\Container\tests;
 
 class UserTest
 {

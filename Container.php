@@ -394,9 +394,11 @@ class Container implements ContainerInterface
 	/**
 	 * ArrayAccess method.
 	 * 
-	 * @see DI\Container::has
+	 * @param mixed $offset
+	 * 
+	 * @return bool
 	 */
-	public function offsetExists($offset)
+	public function offsetExists(mixed $offset): bool
 	{
 		return $this->has($offset);
 	}
@@ -404,9 +406,11 @@ class Container implements ContainerInterface
 	/**
 	 * ArrayAccess method.
 	 * 
-	 * @see DI\Container::get
+	 * @param mixed $offset
+	 * 
+	 * @return mixed
 	 */
-	public function offsetGet($offset)
+	public function offsetGet(mixed $offset): mixed
 	{
 		return $this->get($offset);
 	}
@@ -414,20 +418,25 @@ class Container implements ContainerInterface
 	/**
 	 * ArrayAccess method.
 	 * 
-	 * @see DI\Container::add
+	 * @param mixed $offset
+	 * @param mixed $value
+	 * 
+	 * @return void
 	 */
-	public function offsetSet($offset, $value)
+	public function offsetSet(mixed $offset, mixed $value): void
 	{
-		return $this->add($offset, $value);
+		$this->add($offset, $value);
 	}
 
 	/**
 	 * ArrayAccess method.
 	 * 
-	 * @see DI\Container::remove
+	 * @param mixed $offset
+	 * 
+	 * @return void
 	 */
-	public function offsetUnset($offset)
+	public function offsetUnset(mixed $offset): void
 	{
-		return $this->remove($offset);
+		$this->remove($offset);
 	}
 }

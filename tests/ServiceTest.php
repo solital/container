@@ -1,6 +1,6 @@
 <?php
 
-namespace Solital\Core\Container\Test;
+namespace Solital\Core\Container\tests;
 
 use Solital\Core\Container\Interface\ContainerInterface;
 use Solital\Core\Container\Interface\ServiceProviderInterface;

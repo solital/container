@@ -1,11 +1,9 @@
 <?php
 
-namespace DI\Test;
+namespace Solital\Core\Container\tests;
 
-use stdClass;
 use PHPUnit\Framework\TestCase;
 use Solital\Core\Container\Container;
-use Solital\Core\Container\Test\ServiceTest;
 
 /**
  * Container testing.

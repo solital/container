@@ -19,7 +19,7 @@
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"Solital\\Core\\Container\\Test\\": "tests/"
+			"Solital\\Core\\Container\\Tests\\": "tests/"
 		}
 	}
 }
